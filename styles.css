@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+
+    background-image: url(./images/MiniProjectbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.bgimg{
+
+    width: 100%;
+    height: 100%;
+}
+
+.Icon{
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-align: center;  
+    
+    /* I tried to solve the problem of the icon text because of the REDDY wouldn't come to the center inspite of using 
+       text align in the icon text class. So I made another span for reddy and also put a <br> in between Abhiram and Reddy. 
+       then I gave both the spans the same class "icon-text" to retain the property as Abhiram for Reddy. Then tried align items in "Icon"
+       but that did not work so I used text-align in Icon and it worked. Now instead of Abhiram 
+                                                                                        Reddy
+        I got :    Abhiram 
+                    Reddy 
+                    
+    */
+    
+}
+
+.icon-text{
+
+    color:white;
+    font-family: 'Tilt Wrap';
+    font-weight: bolder;
+    font-size: 20px;
+    
+    
+
+}
+
+.content{
+    
+    display: flex;
+}
+
+.title{
+
+    position: relative;
+    top: 100px;
+    left: 580px;
+    width: 400px;
+    text-align: center;
+    
+
+}
+
+.title-name{
+
+    color: white;
+    font-size: 60px;
+    font-weight: 100;
+    font-family: 'Tinos';
+    letter-spacing: 0.2rem;
+}
+
+.title :hover{
+
+    cursor: default;
+
+}
+
+
+.input{
+
+    color: white;
+    position: absolute;
+    width: 60rem;
+    display: flex;
+    justify-content: space-between;
+    top: 320px;
+    left: 300px;
+    font-family: 'Tinos';
+    text-align: center;
+    
+
+}
+
+.day, .month{
+
+    font-size: 30px;
+}
+
+
+
+#day-box, #month-box{
+
+    
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    font-size: 25px;
+    font-family: 'Tinos';
+    text-align: center;
+    /* text-indent: 60px;  */
+    /* The above 'text-indent' did the help of placing the starting point at where I wanted to. */
+    
+}
+
+#day-box{
+
+    box-shadow: -4px 4px 2px #4d716e;
+    background-color: #F7F1E5 ;
+    /* text-indent: 90px; */
+
+}
+
+#month-box{
+
+    box-shadow: -4px 4px 2px #fba150;
+    background-color: #F7F1E5;
+    /* text-indent: 60px; */
+
+}
+
+#day-box #month-box :active{
+
+    outline: none;
+}
+
+
+#done{
+
+    position: absolute;
+    top: 360px;
+    right: 700px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: -2px 2px 2px red;
+    
+
+}
+
+#done :active{
+
+    margin-top: 2px;
+    margin-left: -2px;
+    box-shadow: none;
+}
+
+.output{
+
+    position: absolute;
+    bottom: 100px;
+    left: 580px;
+}
+
+#Output-text{
+
+    color: #182747;
+    font-size: 50px;
+    font-family: 'Tinos';
+}
